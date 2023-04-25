@@ -31,7 +31,7 @@ To use Authy tokens outside of the Authy app, you need to extract the secret key
 1. Paste the code below in the console and hit Enter.
 
 ```
-appManager.getModel().forEach(model => console.log(`${model.name}: ${model.secretSeed}`));
+appManager.getModel().forEach(model => console.log(`${model.name}: ${model.decryptedSeed}`));
 ```
 
 ### Convert hex keys to base-32
